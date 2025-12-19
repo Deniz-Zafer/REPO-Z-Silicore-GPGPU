@@ -125,7 +125,8 @@ module GPU_Core #(
     // -------------------------
     // Handshake policy (şimdilik stall yok)
     // -------------------------
-    assign ex_ready   = 1'b1;
+    assign ex_ready = ~ex_busy;
+
 
     // scheduler seçti + hazard ok + issue_reg alabiliyor
     assign do_issue_id = sched_valid && issue_ok_sel && id_ready;
