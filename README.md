@@ -1,4 +1,4 @@
-# REPO-Z-Silicore-GPGPU
+# Silicore-GPGPU
 General purpose / AI Accelerator GPU Design
 
 A SIMT-style GPGPU core written in SystemVerilog: 4 warps × 8 lanes, 32-bit data path, vector register file with masked execution.
